@@ -1,0 +1,107 @@
+:root {
+  /* ---- Palette: "soil & harvest" ---- */
+  --color-soil: #1e2a1f;         /* deep loam green-black — nav, footer, dark sections */
+  --color-soil-soft: #283a29;    /* lighter loam for panels on dark */
+  --color-cream: #fbf7ed;        /* paper / card surface */
+  --color-cream-dim: #f2ead9;    /* secondary surface, inputs */
+  --color-wheat: #dcaa3d;        /* primary gold accent — CTAs, highlights */
+  --color-wheat-deep: #b8862a;   /* hover state for gold */
+  --color-leaf: #3f6b34;         /* primary green — links, secondary buttons */
+  --color-leaf-deep: #2e4f26;
+  --color-clay: #b5502b;         /* rust clay — sparing use: sale tags, destructive */
+  --color-ink: #262319;          /* body text */
+  --color-ink-soft: #6b6656;     /* secondary text */
+  --color-line: #e2dcc9;         /* hairline borders on cream */
+  --color-line-dark: rgba(251, 247, 237, 0.16); /* hairline on soil */
+  --color-white: #ffffff;
+  --color-danger: #a63a2c;
+  --color-success: #3f6b34;
+
+  /* ---- Type ---- */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace;
+
+  /* ---- Radius / shadow ---- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --shadow-card: 0 1px 2px rgba(38, 35, 25, 0.06), 0 8px 24px -12px rgba(38, 35, 25, 0.18);
+  --shadow-lift: 0 12px 32px -12px rgba(38, 35, 25, 0.32);
+
+  /* ---- Layout ---- */
+  --page-max: 1240px;
+  --nav-height: 72px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--color-soil);
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+::selection {
+  background: var(--color-wheat);
+  color: var(--color-soil);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-wheat-deep);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

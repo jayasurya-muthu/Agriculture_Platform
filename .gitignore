@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -22,3 +23,30 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+=======
+# React
+Application_global/node_modules/
+Application_global/dist/
+Application_global/.env
+Application_global/.env.local
+
+# Spring Boot
+global-agriculture-backend/target/
+global-agriculture-backend/.env
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+*.env
+>>>>>>> 9899276c44189dce381b4cbde88e7a197e41bc07
